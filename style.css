@@ -1,0 +1,28 @@
+*{
+    font-size: 18px;
+    text-align: center;
+}
+
+button{
+    background-color:darkgreen;
+    color: white;
+    margin: 22px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: darkcyan;
+}
+
+#prefer{
+    margin: 10px;
+}
+input[type=checkbox]  {
+    width: 25px;
+    height: 30px;
+    vertical-align: middle;
+}
+

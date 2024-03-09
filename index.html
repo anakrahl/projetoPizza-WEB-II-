@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedido de Pizza</title>
+</head>
+
+<body>
+    <form>
+    <h2>Tamanho:</h2>
+    <select id="tamanhos" onchange="alterarVisib()">
+        <option value="Selecionar">Selecione o tamanho da pizza</option>
+        <option value="Pequena">Pequena</option>
+        <option value="Media">Média</option>
+        <option value="Grande">Grande</option>
+    </select>
+    <h2>Bordas:</h2>
+    <input type="checkbox" id="com-borda">Sim
+    <input type="checkbox" id="sem-borda">Não
+        <h2>Sabores:</h2>
+        <input type="text" placeholder="Escolha o primeiro sabor" id="sabor1">
+        <input type="text" placeholder="Escolha o segundo sabor" id="sabor2">
+        <input type="text" placeholder="Escolha o terceiro sabor" id="sabor3">
+    <h2>Status:</h2>
+    <select id="status-pedido">
+        <option value="Selecionar">Selecione o status do pedido</option>
+        <option value="Em preparo">Em preparo</option>
+        <option value="Aguardando...">Aguardando...</option>
+        <option value="Pronto">Pronto</option>
+    </select>
+    <br>
+    <button type="button" onclick="formulario()" id="salvar-pedido">Salvar</button>
+    <script src="function.js"></script>
+</form>
+
+<div id="statusPedido"></div>
+</body>
+
+</html>
